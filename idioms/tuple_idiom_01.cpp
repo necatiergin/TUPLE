@@ -9,7 +9,7 @@ int main()
 
 	tie(x, y, z) = tuple(y, z, x);
 
-	std::cout << "x = " << x << "\n";
-	std::cout << "y = " << y << "\n";
-	std::cout << "z = " << z << "\n";
+	std::cout << "x = " << x << '\n';
+	std::cout << "y = " << y << '\n';
+	std::cout << "z = " << z << '\n';
 }
