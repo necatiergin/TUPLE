@@ -7,5 +7,5 @@ int main()
 {
 	auto t = make_tuple(12, 2.3, 34L);
 
-	cout << typeid(t).name() << "\n";
+	cout << typeid(t).name() << ';
 }
