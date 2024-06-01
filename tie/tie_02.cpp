@@ -3,7 +3,7 @@
 #include "date.h"
 
 std::tuple<int, double, std::string, Date>
-func(void)
+func()
 {
 	using namespace std::literals;
 	//...
@@ -21,8 +21,8 @@ int main()
 
 	tie(ival, dval, str, mydate) = func();
 
-	std::cout << "ival = " << ival << "\n";
-	std::cout << "dval = " << dval << "\n";
-	std::cout << "str = " << str << "\n";
-	std::cout << "mydate = " << mydate << "\n";
+	cout << "ival = " << ival << '\n';
+	cout << "dval = " << dval << '\n';
+	cout << "str = " << str << '\n';
+	cout << "mydate = " << mydate << '\n';
 }
