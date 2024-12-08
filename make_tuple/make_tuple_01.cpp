@@ -1,11 +1,12 @@
 #include <tuple>
 #include <iostream>
-
-using namespace std;
+#include <type_traits>
 
 int main()
 {
-	auto t = make_tuple(12, 2.3, 34L);
+	auto t = std::make_tuple(12, 2.3, 34L);
 
-	cout << typeid(t).name() << ';
+	std::cout << typeid(t).name() << '\n';
+	using type = std::tuple<int, double, long>;
+	constexpr bool b = std::is_same_v<type, decltype(t)>;  //true
 }
