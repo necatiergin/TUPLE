@@ -4,11 +4,9 @@
 
 int main()
 {
-	using namespace std;
-
 	int x = 23;
 	double dval = 5;
-	string str = "Mehmet";
+	std::string str = "Mehmet";
 
 	auto t = tie(x, dval, str);
 
@@ -16,7 +14,7 @@ int main()
 	get<1>(t) *= 2.5;
 	get<2>(t) += "can";
 
-	cout << "x = " << x << '\n';
-	cout << "dval = " << dval << '\n';
-	cout << "str = " << str << '\n';
+	std::cout << "x = " << x << '\n';
+	std::cout << "dval = " << dval << '\n';
+	std::cout << "str = " << str << '\n';
 }
