@@ -3,11 +3,9 @@
 
 int main()
 {
-	using namespace std;
-
 	int x = 10, y = 20, z = 30;
 
-	tie(x, y, z) = tuple(y, z, x);
+	std::tie(x, y, z) = std::tuple(y, z, x);
 
 	std::cout << "x = " << x << '\n';
 	std::cout << "y = " << y << '\n';
