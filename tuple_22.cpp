@@ -19,7 +19,5 @@ std::ostream& operator<<(std::ostream& os, std::tuple<Ts...> const& tx)
 
 int main()
 {
-    using namespace std;
-
-    cout << tuple{ 43, 5.6, "necati", 'A' } << '\n';
+   std::cout << std::tuple{ 43, 5.6, "necati", 'A' } << '\n';
 }
