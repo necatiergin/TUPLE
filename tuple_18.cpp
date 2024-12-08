@@ -9,9 +9,7 @@ using info = std::tuple<int, std::string, std::string, Date>;
 
 int main()
 {
-	using namespace std;
-
-	vector<info> ivec;
+	std::vector<info> ivec;
 
 	randomize();
 	for (int i = 0; i < 5000; ++i) {
@@ -19,9 +17,9 @@ int main()
 	}
 
 	sort(ivec.begin(), ivec.end());
-	ofstream ofs{ "out.txt" };
+	std::ofstream ofs{ "out.txt" };
 	if (!ofs) {
-		std::cerr << "out.txt dosyasi olusturulamadi\n";
+		std::cerr << "cannot create out.txt\n";
 		return 1;
 	}
 
