@@ -9,12 +9,12 @@ func()
 {
 	using namespace std::literals;
 	//...
-	return std::make_tuple(12, 3.4, "helin"s, Date{ 1, 1, 2020 });
+	return std::make_tuple(12, 3.4, "necati"s, Date{ 1, 1, 2020 });
 }
 
 int main()
 {
-	if (auto [ival, dval, name, bdate] = func(); name == "helin") {
+	if (auto [ival, dval, name, bdate] = func(); name == "necati") {
 		std::cout << ival << " " << dval << " " << bdate << '\n';
 	}
 }
