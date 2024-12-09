@@ -6,7 +6,7 @@ template <typename S, typename T, std::size_t idx = 0>
 struct has_type : std::conditional_t<  
 	std::is_same_v<std::tuple_element_t<idx, T>, S>, std::true_type,
 	// ELSE
-	std::conditional_t<(idx == std::tuple_size<T>::value - 1),	std::false_type, has_type<S, T, idx>>>
+	std::conditional_t<(idx == std::tuple_size<T>::value - 1), std::false_type, has_type<S, T, idx>>>
 {};
 
 int main() 
